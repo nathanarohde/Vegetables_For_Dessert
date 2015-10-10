@@ -7,3 +7,13 @@ ul {
 li {
 	display: inline;
 }
+
+.cartoon {
+	max-width: 100%;
+	height: auto;
+	margin: 10px 5% 30px 5%;
+}
+
+.title{
+	margin-left: 5%;
+}
