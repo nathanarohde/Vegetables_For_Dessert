@@ -1,18 +1,21 @@
 <html>
 	<head>
 		<title>Vegetables for Dessert</title>
-		<meta name="description" content="A cynical, morbid web comic with poop jokes, dead clowns and other stuff."> </meta>
+		<meta name="description" content="A cynical, morbid web comic with poop jokes, and 20% more dead clowns than similar strips."> </meta>
+		<link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
 		<link href="css/style.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 		<!--[if lt IE 9]>
   			<script src="dist/html5shiv.js"></script>
 		<![endif]-->
 	</head>
-	<body ng-app="myApp">
+	<body>
 		<header>
 			<!-- banner -->
 		</header>
-		<nav>
+		<h1> Vegetables for Dessert </h1>
+		<nav class="navbar">
 			<ul>
 				<li>
 					<a href="">Home</a>
@@ -28,8 +31,7 @@
 				</li>
 			</ul>
 		</nav>
-		<h1> Vegetables for Dessert </h1>
-		<section>
+		<section ng-app="myApp">
 			<div ng-controller="HomeController">
 				<div class="container">
 					<div ng-repeat="cartoon in cartoons">
