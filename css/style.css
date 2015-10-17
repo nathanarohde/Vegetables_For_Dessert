@@ -1,6 +1,12 @@
+.header {
+	max-width: 100%;
+}
+
 .navbar {
 	text-align:center;
 	margin-bottom: 20px;
+	background-color: #9e0b0f;
+	padding: 5px 0 5px 0;
 }
 
 .navbar ul {
@@ -11,6 +17,11 @@
 
 .navbar li {
 	display: inline;
+	padding: 0 5%;
+}
+
+.navbar a {
+	color: #ffd42a;
 }
 
 .cartoon {
@@ -29,11 +40,12 @@
 h1{
 	text-align:center;
 	font-family: "Fontdiner Swanky", sans;
+	color: #9e0b0f;
 	letter-spacing: 2px;
+	padding: 10px 0 10px 0;
 }
 
 a {
 	font-family: "Hammersmith One", sans;
 	text-decoration: none;
 }
-
