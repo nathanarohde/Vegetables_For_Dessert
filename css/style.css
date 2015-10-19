@@ -1,5 +1,14 @@
+@media screen and (min-width:480px){
+
+}
+
+@media screen and (min-width:660px){
+	
+}
+
 .header {
 	max-width: 100%;
+	display: block;
 }
 
 .navbar {
@@ -35,6 +44,7 @@
 
 .title{
 	text-align:center;
+	font-family: "Hammersmith One", sans;
 }
 
 h1{
@@ -43,9 +53,25 @@ h1{
 	color: #9e0b0f;
 	letter-spacing: 2px;
 	padding: 10px 0 10px 0;
+	font-size: 1.5em;
 }
 
 a {
 	font-family: "Hammersmith One", sans;
+	font-size:.75em;
 	text-decoration: none;
+}
+
+.ad {
+	height:60px;
+	width:234px;
+	background-color: black;
+	margin: 5% auto;
+}
+
+.share_bar {
+	height:15px;
+	width:320px;
+	background-color: yellow;
+	margin: auto;
 }

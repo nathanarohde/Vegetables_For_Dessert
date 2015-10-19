@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Vegetables for Dessert</title>
 		<meta name="description" content="A cynical, morbid web comic with poop jokes, and 20% more dead clowns than similar strips."> </meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
 		<link href="css/style.css" rel="stylesheet">
@@ -34,11 +36,17 @@
 		<section ng-app="myApp">
 			<div ng-controller="HomeController">
 				<div class="container">
-					<div ng-repeat="cartoon in cartoons">
-						<p class="title">{{ cartoon.title }}</p>
-						<a ng-href="#{{cartoon.number}}">
-							<img id="{{cartoon.number}} " class="cartoon" ng-src="{{ cartoon.image }}" alt="{{ cartoon.alt }}">
-						</a>
+					<div id="fixed" when-scrolled="loadMore()">
+						<div ng-repeat="cartoon in cartoons">
+							<p class="title">{{ cartoon.title }}</p>
+							<a ng-href="#{{cartoon.number}}">
+								<img id="{{cartoon.number}} " class="cartoon" ng-src="{{ cartoon.image }}" alt="{{ cartoon.alt }}">
+							</a>
+							<div class="share_bar">
+							</div>
+							<div class="ad">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -49,5 +57,31 @@
 		</footer>
 			<script src="js/app.js"></script>
 			<script src="js/controllers/HomeController.js"></script>
+			<script>
+				function Main($scope) {
+				    $scope.items = [];
+				    var counter = 0;
+				    $scope.loadMore = function() {
+				        for (var i = 0; i < 2; i++) {
+				            $scope.items.push({
+				                id: counter
+				            });
+				            counter += 2;
+				        }
+				    };
+				    $scope.loadMore();
+				}
+
+				angular.module('scroll', []).directive('whenScrolled', function() {
+				    return function(scope, elm, attr) {
+				        var raw = elm[0];
+				        elm.bind('scroll', function() {
+				            if (raw.scrollTop + raw.offsetHeight >= raw.scrollHeight) {
+				                scope.$apply(attr.whenScrolled);
+				            }
+				        });
+				    };
+				});
+			</script>
 	</body>
 </html>
