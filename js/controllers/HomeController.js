@@ -1,6 +1,566 @@
 app.controller('HomeController',
   ['$scope', function($scope) {
     $scope.cartoons = [
+      { title: 'cartoon191',
+        image: 'cartoons/VFD_0191.png',
+        alt:'',
+        number:'0191'
+      },
+      { title: 'cartoon190',
+        image: 'cartoons/VFD_0190.gif',
+        alt:'',
+        number:'0190'
+      },
+      { title: 'cartoon189',
+        image: 'cartoons/VFD_0189.png',
+        alt:'',
+        number:'0189'
+      },
+      { title: 'cartoon188',
+        image: 'cartoons/VFD_0188.png',
+        alt:'',
+        number:'0188'
+      },
+      { title: 'cartoon187',
+        image: 'cartoons/VFD_0187.png',
+        alt:'',
+        number:'0187'
+      },
+      { title: 'cartoon186',
+        image: 'cartoons/VFD_0186.png',
+        alt:'',
+        number:'0186'
+      },
+      { title: 'cartoon185',
+        image: 'cartoons/VFD_0185.png',
+        alt:'',
+        number:'0185'
+      },
+      { title: 'cartoon184',
+        image: 'cartoons/VFD_0184.png',
+        alt:'',
+        number:'0184'
+      },
+      { title: 'cartoon183',
+        image: 'cartoons/VFD_0183.png',
+        alt:'',
+        number:'0183'
+      },
+      { title: 'cartoon182',
+        image: 'cartoons/VFD_0182.jpg',
+        alt:'',
+        number:'0182'
+      },
+      { title: 'cartoon181',
+        image: 'cartoons/VFD_0181.jpg',
+        alt:'',
+        number:'0181'
+      },
+      { title: 'cartoon180',
+        image: 'cartoons/VFD_0180.jpg',
+        alt:'',
+        number:'0180'
+      },
+      { title: 'cartoon179',
+        image: 'cartoons/VFD_0179.jpg',
+        alt:'',
+        number:'0179'
+      },
+      { title: 'cartoon178',
+        image: 'cartoons/VFD_0178.jpg',
+        alt:'',
+        number:'0178'
+      },
+      { title: 'cartoon177',
+        image: 'cartoons/VFD_0177.jpg',
+        alt:'',
+        number:'0177'
+      },
+      { title: 'cartoon176',
+        image: 'cartoons/VFD_0176.jpg',
+        alt:'',
+        number:'0176'
+      },
+      { title: 'cartoon175',
+        image: 'cartoons/VFD_0175.jpg',
+        alt:'',
+        number:'0175'
+      },
+      { title: 'cartoon174',
+        image: 'cartoons/VFD_0174.jpg',
+        alt:'',
+        number:'0174'
+      },
+      { title: 'cartoon173',
+        image: 'cartoons/VFD_0173.jpg',
+        alt:'',
+        number:'0173'
+      },
+      { title: 'cartoon172',
+        image: 'cartoons/VFD_0172.jpg',
+        alt:'',
+        number:'0172'
+      },
+      { title: 'cartoon171',
+        image: 'cartoons/VFD_0171.jpg',
+        alt:'',
+        number:'0171'
+      },
+      { title: 'cartoon170',
+        image: 'cartoons/VFD_0170.jpg',
+        alt:'',
+        number:'0170'
+      },
+      { title: 'cartoon169',
+        image: 'cartoons/VFD_0169.jpg',
+        alt:'',
+        number:'0169'
+      },
+      { title: 'cartoon168',
+        image: 'cartoons/VFD_0168.jpg',
+        alt:'',
+        number:'0168'
+      },
+      { title: 'cartoon167',
+        image: 'cartoons/VFD_0167.jpg',
+        alt:'',
+        number:'0167'
+      },
+      { title: 'cartoon166',
+        image: 'cartoons/VFD_0166.jpg',
+        alt:'',
+        number:'0166'
+      },
+      { title: 'cartoon165',
+        image: 'cartoons/VFD_0165.jpg',
+        alt:'',
+        number:'0165'
+      },
+      { title: 'cartoon164',
+        image: 'cartoons/VFD_0164.jpg',
+        alt:'',
+        number:'0164'
+      },
+      { title: 'cartoon163',
+        image: 'cartoons/VFD_0163.png',
+        alt:'',
+        number:'0163'
+      },
+      { title: 'cartoon162',
+        image: 'cartoons/VFD_0162.jpg',
+        alt:'',
+        number:'0162'
+      },
+      { title: 'cartoon161',
+        image: 'cartoons/VFD_0161.jpg',
+        alt:'',
+        number:'0161'
+      },
+      { title: 'cartoon160',
+        image: 'cartoons/VFD_0160.jpg',
+        alt:'',
+        number:'0160'
+      },
+      { title: 'cartoon159',
+        image: 'cartoons/VFD_0159.jpg',
+        alt:'',
+        number:'0159'
+      },
+      { title: 'cartoon158',
+        image: 'cartoons/VFD_0158.jpg',
+        alt:'',
+        number:'0158'
+      },
+      { title: 'cartoon157',
+        image: 'cartoons/VFD_0157.jpg',
+        alt:'',
+        number:'0157'
+      },
+      // { title: 'cartoon156',
+      //   image: 'cartoons/VFD_0156.jpg',
+      //   alt:'',
+      //   number:'0156'
+      // }, scarecrow.gif
+      { title: 'cartoon155',
+        image: 'cartoons/VFD_0155.jpg',
+        alt:'',
+        number:'0155'
+      },
+      { title: 'cartoon154',
+        image: 'cartoons/VFD_0154.jpg',
+        alt:'',
+        number:'0154'
+      },
+      { title: 'cartoon153',
+        image: 'cartoons/VFD_0153.jpg',
+        alt:'',
+        number:'0153'
+      },
+      { title: 'cartoon152',
+        image: 'cartoons/VFD_0152.jpg',
+        alt:'',
+        number:'0152'
+      },
+      { title: 'cartoon151',
+        image: 'cartoons/VFD_0151.jpg',
+        alt:'',
+        number:'0151'
+      },
+      { title: 'cartoon150',
+        image: 'cartoons/VFD_0150.jpg',
+        alt:'',
+        number:'0150'
+      },
+      { title: 'cartoon149',
+        image: 'cartoons/VFD_0149.jpg',
+        alt:'',
+        number:'0149'
+      },
+      { title: 'cartoon148',
+        image: 'cartoons/VFD_0148.jpg',
+        alt:'',
+        number:'0148'
+      },
+      { title: 'cartoon147',
+        image: 'cartoons/VFD_0147.jpg',
+        alt:'',
+        number:'0147'
+      },
+      { title: 'cartoon46',
+        image: 'cartoons/VFD_0146.jpg',
+        alt:'',
+        number:'0146'
+      },
+      { title: 'cartoon145',
+        image: 'cartoons/VFD_0145.jpg',
+        alt:'',
+        number:'0145'
+      },
+      { title: 'cartoon144',
+        image: 'cartoons/VFD_0144.jpg',
+        alt:'',
+        number:'0144'
+      },
+      { title: 'cartoon143',
+        image: 'cartoons/VFD_0143.jpg',
+        alt:'',
+        number:'0143'
+      },
+      { title: 'cartoon142',
+        image: 'cartoons/VFD_0142.jpg',
+        alt:'',
+        number:'0142'
+      },
+      { title: 'cartoon141',
+        image: 'cartoons/VFD_0141.jpg',
+        alt:'',
+        number:'0141'
+      },
+      { title: 'cartoon140',
+        image: 'cartoons/VFD_0140.jpg',
+        alt:'',
+        number:'0140'
+      },
+      { title: 'cartoon139',
+        image: 'cartoons/VFD_0139.jpg',
+        alt:'',
+        number:'0139'
+      },
+      { title: 'cartoon138',
+        image: 'cartoons/VFD_0138.jpg',
+        alt:'',
+        number:'0138'
+      },
+      { title: 'cartoon137',
+        image: 'cartoons/VFD_0137.jpg',
+        alt:'',
+        number:'0137'
+      },
+      { title: 'cartoon36',
+        image: 'cartoons/VFD_0136.jpg',
+        alt:'',
+        number:'0136'
+      },
+      { title: 'cartoon135',
+        image: 'cartoons/VFD_0135.jpg',
+        alt:'',
+        number:'0135'
+      },
+      { title: 'cartoon134',
+        image: 'cartoons/VFD_0134.jpg',
+        alt:'',
+        number:'0134'
+      },
+      { title: 'cartoon133',
+        image: 'cartoons/VFD_0133.jpg',
+        alt:'',
+        number:'0133'
+      },
+      { title: 'cartoon132',
+        image: 'cartoons/VFD_0132.jpg',
+        alt:'',
+        number:'0132'
+      },
+      { title: 'cartoon131',
+        image: 'cartoons/VFD_0131.jpg',
+        alt:'',
+        number:'0131'
+      },
+      { title: 'cartoon130',
+        image: 'cartoons/VFD_0130.jpg',
+        alt:'',
+        number:'0130'
+      },
+      { title: 'cartoon129',
+        image: 'cartoons/VFD_0129.jpg',
+        alt:'',
+        number:'0129'
+      },
+      { title: 'cartoon128',
+        image: 'cartoons/VFD_0128.jpg',
+        alt:'',
+        number:'0128'
+      },
+      { title: 'cartoon127',
+        image: 'cartoons/VFD_0127.jpg',
+        alt:'',
+        number:'0127'
+      },
+      { title: 'cartoon126',
+        image: 'cartoons/VFD_0126.jpg',
+        alt:'',
+        number:'0126'
+      },
+      { title: 'cartoon125',
+        image: 'cartoons/VFD_0125.jpg',
+        alt:'',
+        number:'0125'
+      },
+      { title: 'cartoon124',
+        image: 'cartoons/VFD_0124.jpg',
+        alt:'',
+        number:'0124'
+      },
+      { title: 'cartoon123',
+        image: 'cartoons/VFD_0123.jpg',
+        alt:'',
+        number:'0123'
+      },
+      { title: 'cartoon122',
+        image: 'cartoons/VFD_0122.jpg',
+        alt:'',
+        number:'0122'
+      },
+      { title: 'cartoon121',
+        image: 'cartoons/VFD_0121.jpg',
+        alt:'',
+        number:'0121'
+      },
+      { title: 'cartoon120',
+        image: 'cartoons/VFD_0120.jpg',
+        alt:'',
+        number:'0120'
+      },
+      { title: 'cartoon119',
+        image: 'cartoons/VFD_0119.jpg',
+        alt:'',
+        number:'0119'
+      },
+      { title: 'cartoon118',
+        image: 'cartoons/VFD_0118.jpg',
+        alt:'',
+        number:'0118'
+      },
+      { title: 'cartoon117',
+        image: 'cartoons/VFD_0117.jpg',
+        alt:'',
+        number:'0117'
+      },
+      { title: 'cartoon116',
+        image: 'cartoons/VFD_0116.jpg',
+        alt:'',
+        number:'0116'
+      },
+      { title: 'cartoon115',
+        image: 'cartoons/VFD_0115.jpg',
+        alt:'',
+        number:'0115'
+      },
+      { title: 'cartoon114',
+        image: 'cartoons/VFD_0114.jpg',
+        alt:'',
+        number:'0114'
+      },
+      { title: 'cartoon113',
+        image: 'cartoons/VFD_0113.jpg',
+        alt:'',
+        number:'0113'
+      },
+      { title: 'cartoon112',
+        image: 'cartoons/VFD_0112.jpg',
+        alt:'',
+        number:'0112'
+      },
+      { title: 'cartoon111',
+        image: 'cartoons/VFD_0111.jpg',
+        alt:'',
+        number:'0111'
+      },
+      { title: 'cartoon110',
+        image: 'cartoons/VFD_0110.jpg',
+        alt:'',
+        number:'0110'
+      },
+      { title: 'cartoon109',
+        image: 'cartoons/VFD_0109.jpg',
+        alt:'',
+        number:'0109'
+      },
+      { title: 'cartoon108',
+        image: 'cartoons/VFD_0108.jpg',
+        alt:'',
+        number:'0108'
+      },
+      { title: 'cartoon107',
+        image: 'cartoons/VFD_0107.jpg',
+        alt:'',
+        number:'0107'
+      },
+      { title: 'cartoon106',
+        image: 'cartoons/VFD_0106.jpg',
+        alt:'',
+        number:'0106'
+      },
+      { title: 'cartoon105',
+        image: 'cartoons/VFD_0105.jpg',
+        alt:'',
+        number:'0105'
+      },
+      { title: 'cartoon104',
+        image: 'cartoons/VFD_0104.jpg',
+        alt:'',
+        number:'0104'
+      },
+      { title: 'cartoon103',
+        image: 'cartoons/VFD_0103.jpg',
+        alt:'',
+        number:'0103'
+      },
+      { title: 'cartoon102',
+        image: 'cartoons/VFD_0102.jpg',
+        alt:'',
+        number:'0102'
+      },
+      { title: 'cartoon101',
+        image: 'cartoons/VFD_0101.jpg',
+        alt:'',
+        number:'0101'
+      },
+      { title: 'cartoon100',
+        image: 'cartoons/VFD_0100.jpg',
+        alt:'',
+        number:'0100'
+      },
+      { title: 'cartoon99',
+        image: 'cartoons/VFD_0099.jpg',
+        alt:'',
+        number:'0099'
+      },
+      { title: 'cartoon98',
+        image: 'cartoons/VFD_0098.jpg',
+        alt:'',
+        number:'0098'
+      },
+      { title: 'cartoon97',
+        image: 'cartoons/VFD_0097.jpg',
+        alt:'',
+        number:'0097'
+      },
+      { title: 'cartoon96',
+        image: 'cartoons/VFD_0096.jpg',
+        alt:'',
+        number:'0096'
+      },
+      { title: 'cartoon95',
+        image: 'cartoons/VFD_0095.jpg',
+        alt:'',
+        number:'0095'
+      },
+      { title: 'cartoon94',
+        image: 'cartoons/VFD_0094.jpg',
+        alt:'',
+        number:'0094'
+      },
+      { title: 'cartoon93',
+        image: 'cartoons/VFD_0093.jpg',
+        alt:'',
+        number:'0093'
+      },
+      { title: 'cartoon92',
+        image: 'cartoons/VFD_0092.jpg',
+        alt:'',
+        number:'0092'
+      },
+      { title: 'cartoon91',
+        image: 'cartoons/VFD_0091.jpg',
+        alt:'',
+        number:'0091'
+      },
+      { title: 'cartoon90',
+        image: 'cartoons/VFD_0090.jpg',
+        alt:'',
+        number:'0090'
+      },
+      { title: 'cartoon89',
+        image: 'cartoons/VFD_0089.jpg',
+        alt:'',
+        number:'0089'
+      },
+      { title: 'cartoon88',
+        image: 'cartoons/VFD_0088.jpg',
+        alt:'',
+        number:'0088'
+      },
+      { title: 'cartoon87',
+        image: 'cartoons/VFD_0087.jpg',
+        alt:'',
+        number:'0087'
+      },
+      { title: 'cartoon86',
+        image: 'cartoons/VFD_0086.jpg',
+        alt:'',
+        number:'0086'
+      },
+      { title: 'cartoon85',
+        image: 'cartoons/VFD_0085.jpg',
+        alt:'',
+        number:'0085'
+      },
+      { title: 'cartoon84',
+        image: 'cartoons/VFD_0084.jpg',
+        alt:'',
+        number:'0084'
+      },
+      { title: 'cartoon83',
+        image: 'cartoons/VFD_0083.jpg',
+        alt:'',
+        number:'0083'
+      },
+      { title: 'cartoon82',
+        image: 'cartoons/VFD_0082.jpg',
+        alt:'',
+        number:'0082'
+      },
+      { title: 'cartoon81',
+        image: 'cartoons/VFD_0081.jpg',
+        alt:'',
+        number:'0081'
+      },
+      { title: 'cartoon80',
+        image: 'cartoons/VFD_0080.jpg',
+        alt:'',
+        number:'0080'
+      },
       { title: 'cartoon79',
         image: 'cartoons/VFD_0079.jpg',
         alt:'',
@@ -219,7 +779,7 @@ app.controller('HomeController',
       { title: 'cartoon36',
         image: 'cartoons/VFD_0036.jpg',
         alt:'',
-        number:'00036'
+        number:'0036'
       },
       { title: 'cartoon35',
         image: 'cartoons/VFD_0035.jpg',
@@ -319,7 +879,7 @@ app.controller('HomeController',
       { title: 'cartoon16',
         image: 'cartoons/VFD_0016.jpg',
         alt:'',
-        number:'00016'
+        number:'0016'
       },
       { title: 'cartoon15',
         image: 'cartoons/VFD_0015.jpg',
