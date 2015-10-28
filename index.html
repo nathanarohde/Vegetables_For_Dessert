@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vegetables for Dessert</title>
+		<meta name="description" content="A cynical, morbid web comic with poop jokes, and 20% more dead clowns than similar strips."></meta>
+		<link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<img class="header" src="images/clown_banner.png">
+		</header>
+		<nav class="navbar">
+			<ul>
+				<li>
+					<a href="">Home</a>
+				</li>
+				<li>
+					<a href="">Archive</a>
+				</li>
+				<li>
+					<a href="">Contact</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/VegetablesForDessert">Facebook</a>
+				</li>
+			</ul>
+		</nav>
+		<h1> Vegetables for Dessert </h1>
+		<div ng-app='myApp' ng-controller='HomeController'>
+			<div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
+				<img id="{{cartoon.number}}" ng-repeat="cartoon in cartoons" ng-src="{{cartoon.image}}" alt="{{cartoon.alt}}">
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src='lib/ng-infinite-scroll.min.js'></script>
+		<script src='app.js'></script>
+	</body>
+</html>

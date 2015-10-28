@@ -7,7 +7,6 @@
 		<link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
 		<link href="css/style.css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 		<!--[if lt IE 9]>
   			<script src="dist/html5shiv.js"></script>
 		<![endif]-->
@@ -33,19 +32,17 @@
 			</ul>
 		</nav>
 		<h1> Vegetables for Dessert </h1>
-		<section ng-app="myApp">
-			<div ng-controller="HomeController">
+		<section ng-app="MyApp" ng-controller="HomeController">
+			<div infinite-scroll='loadmore()' infinite-scroll-distance='1'>
 				<div class="container">
-					<div id="fixed" when-scrolled="loadMore()">
-						<div ng-repeat="cartoon in cartoons">
-							<p class="title">{{ cartoon.title }}</p>
-							<a ng-href="#{{cartoon.number}}">
-								<img id="{{cartoon.number}} " class="cartoon" ng-src="{{ cartoon.image }}" alt="{{ cartoon.alt }}">
-							</a>
-							<div class="share_bar">
-							</div>
-							<div class="ad">
-							</div>
+					<div ng-repeat="cartoon in cartoons">
+						<p class="title">{{ cartoon.title }}</p>
+						<a ng-href="#{{cartoon.number}}">
+							<img id="{{cartoon.number}} " class="cartoon" ng-src="{{ cartoon.image }}" alt="{{ cartoon.alt }}">
+						</a>
+						<div class="share_bar">
+						</div>
+						<div class="ad">
 						</div>
 					</div>
 				</div>
@@ -55,33 +52,10 @@
 		<footer>
 			<!-- repeat nav -->
 		</footer>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>		
+			<script src="lib/ng-infinite-scroll.min.js"></script>
 			<script src="js/app.js"></script>
 			<script src="js/controllers/HomeController.js"></script>
-			<script>
-				function Main($scope) {
-				    $scope.items = [];
-				    var counter = 0;
-				    $scope.loadMore = function() {
-				        for (var i = 0; i < 2; i++) {
-				            $scope.items.push({
-				                id: counter
-				            });
-				            counter += 2;
-				        }
-				    };
-				    $scope.loadMore();
-				}
-
-				angular.module('scroll', []).directive('whenScrolled', function() {
-				    return function(scope, elm, attr) {
-				        var raw = elm[0];
-				        elm.bind('scroll', function() {
-				            if (raw.scrollTop + raw.offsetHeight >= raw.scrollHeight) {
-				                scope.$apply(attr.whenScrolled);
-				            }
-				        });
-				    };
-				});
-			</script>
 	</body>
 </html>
