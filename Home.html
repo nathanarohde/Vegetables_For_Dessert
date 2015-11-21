@@ -32,8 +32,8 @@
 			</ul>
 		</nav>
 		<h1> Vegetables for Dessert </h1>
-		<section ng-app="MyApp" ng-controller="HomeController">
-			<div infinite-scroll='loadmore()' infinite-scroll-distance='1'>
+		<section ng-app="App" ng-controller="HomeController">
+			<div infinite-scroll='callLoadMore()' infinite-scroll-distance='1'>
 				<div class="container">
 					<div ng-repeat="cartoon in cartoons">
 						<p class="title">{{ cartoon.title }}</p>

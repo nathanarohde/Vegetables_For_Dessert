@@ -1,2 +1,2 @@
-var app = angular.module("MyApp", ['infinite-scroll']);
-myApp.controller('HomeController',HomeController); 
+var app = angular.module("App", ['infinite-scroll'])
+app.controller('HomeController'); 
