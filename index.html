@@ -32,25 +32,27 @@
 			</ul>
 		</nav>
 		<h1> Vegetables for Dessert </h1>
-		<section ng-app="App" ng-controller="HomeController">
-<!-- 			<div infinite-scroll='callLoadMore()' infinite-scroll-distance='1'> -->	
-			<div>			
-				<div class="container">
-					<div ng-repeat="cartoon in cartoons | limitTo: 2">
-						<p class="title">{{ cartoon.title }}</p>
-						<a ng-href="#{{cartoon.number}}">
-							<img id="{{cartoon.number}} " class="cartoon" ng-src="{{ cartoon.image }}" alt="{{ cartoon.alt }}">
-						</a>
-						<div class="share_bar">
-						</div>
-						<div class="ad">
+		<div data-ng-controller="HomeController">
+			<section ng-app="App" ng-controller="HomeController">
+				<div>			
+					<div class="container">
+						<!-- infinite-scroll='loadMore()' infinite-scroll-distance='1' -->
+						<div ng-repeat="cartoon in cartoons">
+							<p class="title">{{ cartoon.title }}</p>
+							<a ng-href="#{{cartoon.number}}">
+								<img id="{{cartoon.number}} " class="cartoon" ng-src="{{ cartoon.image }}" alt="{{ cartoon.alt }}">
+							</a>
+							<div class="share_bar">
+							</div>
+							<div class="ad">
+							</div>
 						</div>
 					</div>
-					<!-- <button ng-click="HomeController.loadMore()">Click Here</button> -->
+					<button ng-click="loadMore()">Click To Load More</button>
 				</div>
-			</div>
-			<!-- share bar -->
-		</section>
+				<!-- share bar -->
+			</section>
+
 		<footer>
 			<!-- repeat nav -->
 		</footer>

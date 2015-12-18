@@ -1,7 +1,7 @@
 (function() {
-	'use strict';
-	app
-		.service('imageLoaderService', imageLoaderService);
+  'use strict';
+  app
+    .service('imageLoaderService', imageLoaderService);
 
   imageLoaderService.$inject = ['$http'];
 
@@ -22,4 +22,3 @@
   }
 
 })();
-

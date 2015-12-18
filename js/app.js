@@ -2,6 +2,6 @@ var app;
 
 (function() {
 
-	app = angular.module("App", []);
+	app = angular.module("App", ['infinite-scroll']);
 	
 })();
