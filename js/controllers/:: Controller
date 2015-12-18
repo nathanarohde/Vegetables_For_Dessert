@@ -1,0 +1,25 @@
+// Controller
+$scope.message = 'i know kung fu';
+$scope.loadFunction = function() { }
+;
+// Template
+
+{{ message }} // I know kung fu
+
+<table>
+    <tr ng-repeat="d in data | limitTo:totalDisplayed"><td>{{d}}</td></tr>
+</table>
+<button class="btn" ng-click="loadMore()">Load more</button>
+
+//the controller
+$scope.totalDisplayed = 20;
+
+$scope.loadMore = function () {
+  $scope.totalDisplayed += 20;  
+};
+
+$scope.data = data;
+
+chris coyier
+193 the state of frontend dev
+css-tricks

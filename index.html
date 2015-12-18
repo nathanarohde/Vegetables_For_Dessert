@@ -37,7 +37,7 @@
 				<div>			
 					<div class="container">
 						<!-- infinite-scroll='loadMore()' infinite-scroll-distance='1' -->
-						<div ng-repeat="cartoon in cartoons">
+						<div ng-repeat="cartoon in cartoons | limitTo:totalDisplayed">
 							<p class="title">{{ cartoon.title }}</p>
 							<a ng-href="#{{cartoon.number}}">
 								<img id="{{cartoon.number}} " class="cartoon" ng-src="{{ cartoon.image }}" alt="{{ cartoon.alt }}">
