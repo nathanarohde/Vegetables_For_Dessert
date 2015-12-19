@@ -35,8 +35,8 @@
 		<div data-ng-controller="HomeController">
 			<section ng-app="App" ng-controller="HomeController">
 				<div>			
-					<div class="container">
-						<!-- infinite-scroll='loadMore()' infinite-scroll-distance='1' -->
+					<div class="container" infinite-scroll='loadMore()' infinite-scroll-distance='1'>
+						<!--  -->
 						<div ng-repeat="cartoon in cartoons | limitTo:totalDisplayed">
 							<p class="title">{{ cartoon.title }}</p>
 							<a ng-href="#{{cartoon.number}}">
@@ -48,7 +48,7 @@
 							</div>
 						</div>
 					</div>
-					<button ng-click="loadMore()">Click To Load More</button>
+					<!-- <button ng-click="loadMore()">Click To Load More</button> -->
 				</div>
 				<!-- share bar -->
 			</section>
